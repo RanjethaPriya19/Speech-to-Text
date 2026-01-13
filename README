@@ -1,0 +1,33 @@
+Whisper Audio Transcription App (Streamlit + DeepInfra)
+
+A Streamlit-based web application for speech-to-text transcription using the Whisper Large V3 (Distil) model via DeepInfra.
+The app supports both audio file uploads and live microphone recording, enabling quick and interactive transcription workflows.
+
+Features
+
+Transcribe uploaded audio files (.wav, .mp3, .ogg)
+
+Record live audio via microphone and transcribe instantly
+
+Fallback support using sounddevice or PyAudio
+
+Fast inference using DeepInfra-hosted Whisper model
+
+Secure API key handling using environment variables
+
+Simple and intuitive Streamlit UI
+
+
+Architecture Overview
+
+User (Browser)
+   ↓
+Streamlit UI
+   ↓
+Audio Input (Upload / Live Mic)
+   ↓
+Audio Preprocessing (WAV)
+   ↓
+DeepInfra Whisper API
+   ↓
+Transcription Output
